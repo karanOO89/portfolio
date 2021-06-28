@@ -18,29 +18,67 @@ const RightBody = (props) => {
           </p>
         </div>
         <div className="query">
-          <p><b>What I'am doing... </b></p>
+          <p>
+            <b>What I'am doing... </b>
+          </p>
         </div>
         <div className="midDesc">
           <div>
-            <p>
-              I persistent about learning new technology, a problem solver with
+            <img src="dev.png" />
+
+            <p style={{ fontSize: "20px" }}>
+              Full Stack Developer
+              <br />
+              <br />
+              <p style={{ fontSize: "15px" }}>
+                Proficient in front-end development (React,SASS) and connect it
+                with backend (Express.js, Node.js, PostgreSQL) using async
+                approach.
+              </p>
             </p>
           </div>
           <div>
-            <p>
-              I describe myself as someone who's a quick learner and persistent
+            <img src="dev.png" />
+
+            <p style={{ fontSize: "20px" }}>
+              Full Stack Developer
+              <br />
+              <br />
+              <p style={{ fontSize: "15px" }}>
+                Proficient in front-end development (React,SASS) and connect it
+                with backend (Express.js, Node.js, PostgreSQL) using async
+                approach.
+              </p>
             </p>
           </div>
         </div>
         <div className="bottomDesc">
           <div>
-            <p>
-              I persistent about learning new technology, a problem solver with
+            <img src="dev.png" />
+
+            <p style={{ fontSize: "20px" }}>
+              Full Stack Developer
+              <br />
+              <br />
+              <p style={{ fontSize: "15px" }}>
+                Proficient in front-end development (React,SASS) and connect it
+                with backend (Express.js, Node.js, PostgreSQL) using async
+                approach.
+              </p>
             </p>
           </div>
           <div>
-            <p>
-              I describe myself as someone who's a quick learner and persistent
+            <img src="dev.png" />
+
+            <p style={{ fontSize: "20px" }}>
+              Full Stack Developer
+              <br />
+              <br />
+              <p style={{ fontSize: "15px" }}>
+                Proficient in front-end development (React,SASS) and connect it
+                with backend (Express.js, Node.js, PostgreSQL) using async
+                approach.
+              </p>
             </p>
           </div>
         </div>

@@ -18,7 +18,7 @@ const SideNav = (props) => {
       </div>
       <div className="loc">
         <img src="loc1.png" />
-        <label>Calgary</label>
+        <label>Calgary, AB</label>
       </div>
       <div className="email">
         <button>Email Me </button>
