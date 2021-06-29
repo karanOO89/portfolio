@@ -1,6 +1,10 @@
 import "./SideNav.scss";
-
+import { useHistory } from "react-router-dom";
 const SideNav = (props) => {
+  const history = useHistory();
+  const clickHandler = () => {
+    history.push("/email");
+  };
   return (
     <div className="sideNav">
       <div className="logo">Logo</div>
@@ -21,7 +25,7 @@ const SideNav = (props) => {
         <label>Calgary, AB</label>
       </div>
       <div className="email">
-        <button>Email Me </button>
+        <button onClick={clickHandler}>Email Me</button>
       </div>
     </div>
   );

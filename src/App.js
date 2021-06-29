@@ -1,17 +1,25 @@
-import './App.scss';
-import RightBody from './RightBody';
-import SideNav from './SideNav';
+import "./App.scss";
+import SideNav from "./SideNav";
+import RightBody from "./RightBody";
+import EmailForm from "./EmailForm";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
+  
   return (
-    <div className="App">
-      <div>
-        <SideNav />
+    <Router>
+      <div className="App">
+        <div>
+          <SideNav />
+        </div>
+        <div className="rightBody">
+          <Switch>
+            <Route path="/email" component={EmailForm}></Route>
+            <Route path="/" component={RightBody}></Route>
+          </Switch>
+        </div>
       </div>
-      <div>
-        <RightBody />
-      </div>
-    </div>
+    </Router>
   );
 }
 
