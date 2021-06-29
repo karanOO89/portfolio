@@ -1,38 +1,82 @@
 import "./emailForm.scss";
 import React from "react";
 import emailjs from "emailjs-com";
+import { useHistory } from "react-router-dom";
 
 const EmailForm = (props) => {
+  const history = useHistory();
+  const clickHandler = () => {
+    history.push("/");
+  };
   function sendEmail(e) {
     e.preventDefault();
-
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    console.log(e.target.message.value);
+    if (
+      e.target.message.value !== "" &&
+      e.target.subject.value !== "" &&
+      e.target.name.value !== "" &&
+      e.target.email.value !== ""
+    ) {
+      emailjs
+        .sendForm(
+          "service_xocx2ey",
+          "template_bd9d0ot",
+          e.target,
+          "user_B5E57OA7w07HeENZP08dk"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log("error", error.text);
+          }
+        );
+      e.target.reset();
+      return;
+    }
+    alert("Please fill all information");
   }
 
   return (
+    <div className="emailForm">
       <div>
-
-    <form className="contact-form" onSubmit={sendEmail}>
-      <input type="hidden" name="contact_number" />
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
-
+        <button onClick={clickHandler}>
+          <img width="40px" src="back.png" />
+        </button>
       </div>
+      <div className="firstLabel">
+        <label>
+          <b>Send me a note...</b>
+        </label>
+
+        <br />
+        <label>
+          <b>____</b>
+        </label>
+      </div>
+
+      <form onSubmit={sendEmail}>
+        {/* <input type="hidden" name="contact_number" /> */}
+        <div className="header">
+          <div>
+            <input placeholder="Subject" type="text" name="subject" />
+          </div>
+          <div>
+            <input placeholder="Name" type="text" name="name" />
+          </div>
+          <div>
+            <input placeholder="Email" type="email" name="email" />
+          </div>
+        </div>
+        <div>
+          <textarea placeholder="Type your message here..." name="message" />
+        </div>
+        <div className="sendBtn">
+          <input type="submit" value="Send Message" />
+        </div>
+      </form>
+    </div>
   );
 };
 
