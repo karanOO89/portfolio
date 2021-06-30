@@ -12,9 +12,11 @@ const RightBody = (props) => {
           </b>
         </p>
         <p className="desc">
-          I describe myself as someone who's a quick learner and persistent
-          about learning new technology, a problem solver with tools that are
-          currently available.
+          Hi, I'm Karan <br/>I describe myself as someone who's a quick learner and
+          persistent about learning new technology, a problem solver with tools
+          that are currently available. What I'm currently looking for is a
+          happy and learning work environment with peers commited to their
+          related crafts as I am commited to mine.
         </p>
       </div>
       <div className="query">

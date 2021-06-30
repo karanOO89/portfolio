@@ -33,6 +33,7 @@ const EmailForm = (props) => {
           }
         );
       e.target.reset();
+      alert("Message Sent");
       return;
     }
     alert("Please fill all information");
