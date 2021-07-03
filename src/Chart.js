@@ -1,5 +1,5 @@
 import React from "react";
-import { ComposedChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
+import { ComposedChart, Bar, XAxis, YAxis, Tooltip, Legend, Line,Area} from "recharts";
 
 const data = [
   {
@@ -11,13 +11,13 @@ const data = [
   },
   {
     name: "Cypress",
-    Skill_Meter: 84,
+    Skill_Meter: 82,
     fill: "#004d40",
     stroke: "#004d40",
   },
   {
     name: "Jest",
-    Skill_Meter: 87,
+    Skill_Meter: 84,
     fill: "teal",
     stroke: "teal",
   },
@@ -31,7 +31,7 @@ const data = [
   },
   {
     name: "Expressjs",
-    Skill_Meter: 90,
+    Skill_Meter: 83,
     stroke: "#3e2723",
     fill: "#3e2723",
   },
@@ -55,7 +55,7 @@ const data = [
   },
   {
     name: "RSpec",
-    Skill_Meter: 75,
+    Skill_Meter: 73,
     fill: "teal",
     stroke: "teal",
   },
@@ -72,15 +72,15 @@ let duration = 2500;
       height={350}
       data={data}
       margin={{
+          top:10,
         left: 80,
       }}
     >
       <XAxis type="number" />
       <YAxis dataKey="name" type="category" scale="band" />
       <Tooltip />
-      <Legend />
-
-      <Bar animationDuration={duration}  dataKey="Skill_Meter" barSize={8} fill="grey" />
+      {/* <Area animationDuration={duration} dataKey="Skill_Meter"fill="grey"/> */}
+      <Bar animationDuration={duration}  dataKey="Skill_Meter" barSize={8}  />
     </ComposedChart>
   );
 }
