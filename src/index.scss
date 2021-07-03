@@ -3,5 +3,14 @@
 body {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to right, rgb(195, 114, 114) , rgb(126, 118, 71));
+  background-image: linear-gradient(to right,rgb(4, 0, 15), rgb(14, 9, 22) ,  rgb(37, 15, 1));
+.particleJs{
+  position: absolute;
+  height: 100%;
+  width: 98.3%;
+  top:0;
+  left: 0;
+  z-index: -1;
 }
+}
+

@@ -1,5 +1,14 @@
 import React from "react";
-import { ComposedChart, Bar, XAxis, YAxis, Tooltip, Legend, Line,Area} from "recharts";
+import {
+  ComposedChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  Line,
+  Area,
+} from "recharts";
 
 const data = [
   {
@@ -7,7 +16,6 @@ const data = [
     Skill_Meter: 85,
     stroke: "brown",
     fill: "brown",
-
   },
   {
     name: "Cypress",
@@ -26,8 +34,6 @@ const data = [
     Skill_Meter: 80,
     fill: "#1b5e20",
     stroke: "#1b5e20",
-
-
   },
   {
     name: "Expressjs",
@@ -62,9 +68,9 @@ const data = [
 ];
 
 export default function App() {
-
-
-let duration = 2500; 
+  let duration = 2500;
+  let duration2 = 5000;
+  let color = "rgba(1, 18, 20, 0.175)";
   return (
     <ComposedChart
       layout="vertical"
@@ -72,15 +78,15 @@ let duration = 2500;
       height={350}
       data={data}
       margin={{
-          top:10,
+        top: 10,
         left: 80,
       }}
     >
-      <XAxis type="number" />
-      <YAxis dataKey="name" type="category" scale="band" />
+      <XAxis type="number" stroke="grey" />
+      <YAxis dataKey="name" stroke="orrange" type="category" scale="band" />
       <Tooltip />
-      {/* <Area animationDuration={duration} dataKey="Skill_Meter"fill="grey"/> */}
-      <Bar animationDuration={duration}  dataKey="Skill_Meter" barSize={8}  />
+      <Area animationDuration={duration} dataKey="Skill_Meter" fill={color} />
+      <Bar animationDuration={duration2} dataKey="Skill_Meter" barSize={8} />
     </ComposedChart>
   );
 }
