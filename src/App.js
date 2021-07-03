@@ -14,7 +14,7 @@ function App() {
         </div>
         <div className="rightBody">
           <Switch>
-            <Route path="/skills" component={Resume}></Route>
+            <Route path="/resume" component={Resume}></Route>
             <Route path="/email" component={EmailForm}></Route>
             <Route path="/" component={RightBody}></Route>
           </Switch>

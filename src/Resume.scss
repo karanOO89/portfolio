@@ -8,52 +8,60 @@
   .resumeLbl {
     opacity: 0.68;
     font-size: x-large;
-   
   }
-  .eduLbl{
+  .eduLbl {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:6.2em;
-    margin-top:2em;
+    width: 6.2em;
+    margin-top: 2em;
     // opacity: 0.68;
     font-size: large;
-   
-    
   }
-  .education{
-    margin-top:1em;
-    margin-left:2em;
+  .education {
+    margin-top: .5em;
+    margin-left: 2em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 50em;
-    .institute{
+    .institute {
       opacity: 0.68;
       font-size: 20px;
     }
-    .course{
+    .course {
       opacity: 0.6;
       font-size: 11px;
     }
-    div{
-      height: 5em;
+    div {
+      height: 2em;
       width: 20em;
-      padding:15px 45px;
-      border-radius: 15px;
-    border: solid 1px grey;
+      padding: 10px 25px;
+      // border-radius: 15px;
+      // border: solid 1px grey;
     }
   }
-  .skillLbl{
+  .skillLbl {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:4em;
-    margin-top:2em;    
+    width: 4em;
+    margin-top: 1em;
     font-size: large;
-    
   }
-  .skillFooter{
-
+  .skillFooter {
+    font-size: 18px;
+    // display: flex;
+    // margin-top: 1em;
+    // margin-left: 2em;
+    // align-items: center;
+    // justify-content: space-between;
+    // flex-direction: column;
+    // .skills-prof {
+    //   width: 50em;
+    //   display: flex;
+    //   justify-content: space-evenly;
+    //   padding: 1em;
+    // }
   }
 }
