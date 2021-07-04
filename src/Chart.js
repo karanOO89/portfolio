@@ -69,13 +69,12 @@ const data = [
 
 export default function App() {
   let duration = 2500;
-  let duration2 = 5000;
-  let color = "rgba(1, 18, 20, 0.175)";
+  let duration2 = 3500;
   return (
     <ComposedChart
       layout="vertical"
       width={1000}
-      height={350}
+      height={300}
       data={data}
       margin={{
         top: 10,
@@ -83,10 +82,21 @@ export default function App() {
       }}
     >
       <XAxis type="number" stroke="grey" />
-      <YAxis dataKey="name" stroke="orrange" type="category" scale="band" />
+      <YAxis
+        opacity=".7"
+        dataKey="name"
+        stroke="orrange"
+        type="category"
+        scale="band"
+      />
       <Tooltip />
-      <Area animationDuration={duration} dataKey="Skill_Meter" fill={color} />
-      <Bar animationDuration={duration2} dataKey="Skill_Meter" barSize={8} />
+      <Area
+        animationDuration={duration}
+        dataKey="Skill_Meter"
+        fill="#004d40"
+        opacity=".12"
+      />
+      <Bar animationDuration={duration2} dataKey="Skill_Meter" barSize={2} />
     </ComposedChart>
   );
 }

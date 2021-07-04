@@ -1,6 +1,6 @@
 .rightBody {
         width: 60em;
-        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.959), rgba(77, 75, 74, 0.575));
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.938),rgba(255, 255, 255, 0.671), rgba(255, 255, 255, 0.294));
         height: 35em;
         border-radius: 25px;
         display: flex;
@@ -46,11 +46,11 @@
         div {
           display: flex;
           justify-content: flex-start;
-          background-image: linear-gradient(
-            180deg,
-            rgba(209, 191, 191, 0.555),
-            rgba(184, 184, 174, 0.13)
-          );
+          // background-image: linear-gradient(
+          //   180deg,
+          //   rgba(209, 191, 191, 0.555),
+          //   rgba(184, 184, 174, 0.13)
+          // );
           padding-left: 0.5em;
           padding-right: 0.5em;
           
@@ -78,11 +78,11 @@
         div {
           display: flex;
           justify-content: flex-start;
-          background-image: linear-gradient(
-            180deg,
-            rgba(209, 191, 191, 0.555),
-            rgba(184, 184, 174, 0.13)
-          );
+          // background-image: linear-gradient(
+          //   180deg,
+          //   rgba(209, 191, 191, 0.555),
+          //   rgba(184, 184, 174, 0.13)
+          // );
   
           padding-left: 0.5em;
           padding-right: 0.5em;
