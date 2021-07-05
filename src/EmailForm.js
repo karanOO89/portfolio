@@ -43,12 +43,12 @@ const EmailForm = (props) => {
   console.log(process.env.REACT_APP_GOOGLE_KEY);
   return (
     <div className="emailForm">
-      <div></div>
-      <div>
+     
+      {/* <div>
         <button onClick={clickHandler}>
           <img width="40px" src="back.png" />
         </button>
-      </div>
+      </div> */}
       <div className="firstLabel">
         <label>
           <b>Send me a note...</b>

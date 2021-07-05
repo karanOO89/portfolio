@@ -83,9 +83,8 @@ export default function App() {
     >
       <XAxis type="number" stroke="grey" />
       <YAxis
-        opacity=".7"
         dataKey="name"
-        stroke="orrange"
+        stroke="grey"
         type="category"
         scale="band"
       />

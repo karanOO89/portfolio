@@ -1,9 +1,11 @@
 // .index {
 // }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body {
+  color:#84ffffec;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to right,rgb(4, 0, 15), rgb(14, 9, 22) ,  rgb(37, 15, 1));
+  background-image: linear-gradient(to right,rgb(5, 0, 19), rgb(3, 2, 5) ,  rgb(0, 0, 0));
 .particleJs{
   position: absolute;
   height: 100%;

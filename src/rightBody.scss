@@ -1,101 +1,81 @@
 .rightBody {
-        width: 60em;
-        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.938),rgba(255, 255, 255, 0.671), rgba(255, 255, 255, 0.294));
-        height: 35em;
-        border-radius: 25px;
+  width: 60em;
+  background-image: linear-gradient(
+    180deg,
+    #004d40,
+    rgba(10, 37, 19, 0.842),
+    rgba(1, 8, 22, 0.849)
+  );
+  font-family: 'Roboto', sans-serif;
+
+  height: 35em;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .content {
+    margin: 2em;
+    .intro {
+      .about {
+        font-size: x-large;
+      }
+      .desc {
+        font-size: 21px;
+      }
+    }
+    .query {
+      margin-top: 2em;
+      p {
+        font-size: 21px;
+      }
+    }
+    .midDesc {
+      padding-top: 1em;
+      display: flex;
+      justify-content: space-evenly;
+      img {
+        width: 45px;
+        height: 45px;
+        padding-right: 0.8em;
+        margin-top: 5px;
+      }
+      div {
         display: flex;
-        flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;
-        
-  
-    .content {
-      margin: 2em;
-      .intro {
-        .about {
-          opacity: 0.68;
-          font-size: x-large;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        }
-        .desc {
-          opacity: 0.7;
-          font-size: 21px;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        }
-      }
-      .query {
-        opacity: 0.68;
-        margin-top: 2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+
+        width: 25em;
+        border-radius: 15px;
+
         p {
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-          font-size: 23px;
-        }
-      }
-      .midDesc {
-        padding-top: 1em;
-        display: flex;
-        justify-content: space-evenly;
-        img {
-          width: 45px;
-          height: 45px;
-          padding-right: 0.8em;
           margin-top: 5px;
         }
-        div {
-          display: flex;
-          justify-content: flex-start;
-          // background-image: linear-gradient(
-          //   180deg,
-          //   rgba(209, 191, 191, 0.555),
-          //   rgba(184, 184, 174, 0.13)
-          // );
-          padding-left: 0.5em;
-          padding-right: 0.5em;
-          
-          width: 25em;
-          border-radius: 15px;
-  
-          p {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-              Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  
-            margin-top: 5px;
-          }
-        }
       }
-      .bottomDesc {
-        padding-top: 1em;
+    }
+    .bottomDesc {
+      padding-top: 1em;
+      display: flex;
+      justify-content: space-evenly;
+      img {
+        width: 45px;
+        height: 45px;
+        padding-right: 0.8em;
+        margin-top: 5px;
+      }
+      div {
         display: flex;
-        justify-content: space-evenly;
-        img {
-          width: 45px;
-          height: 45px;
-          padding-right: 0.8em;
+        justify-content: flex-start;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        width: 25em;
+        border-radius: 15px;
+        p {
           margin-top: 5px;
-        }
-        div {
-          display: flex;
-          justify-content: flex-start;
-          // background-image: linear-gradient(
-          //   180deg,
-          //   rgba(209, 191, 191, 0.555),
-          //   rgba(184, 184, 174, 0.13)
-          // );
-  
-          padding-left: 0.5em;
-          padding-right: 0.5em;
-          width: 25em;
-          border-radius: 15px;
-          p {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-              Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  
-            margin-top: 5px;
-          }
         }
       }
     }
   }
-  
+}
