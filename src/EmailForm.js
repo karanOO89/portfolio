@@ -1,10 +1,11 @@
 import "./emailForm.scss";
-import React from "react";
+import { React, useState } from "react";
 import emailjs from "emailjs-com";
 import { useHistory } from "react-router-dom";
-import WrappedMap from "./Map";
+import Map from "./Map";
 
 const EmailForm = (props) => {
+
   const history = useHistory();
   const clickHandler = () => {
     history.push("/");
@@ -39,6 +40,7 @@ const EmailForm = (props) => {
     }
     alert("Please fill all information");
   }
+  console.log(process.env.REACT_APP_GOOGLE_KEY);
   return (
     <div className="emailForm">
       <div></div>
@@ -59,11 +61,7 @@ const EmailForm = (props) => {
       </div>
       <div className="emailContent">
         <div className="map">
-          <WrappedMap
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=`}
-            loadingElement={<div style={{ height: "100%" }} />}
-            containerElement={<div style={{ height: "100%" }} />}
-            mapElement={<div style={{ height: "100%" }} />}
+          <Map
           />
         </div>
 
