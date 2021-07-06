@@ -81,10 +81,12 @@ export default function App() {
         left: 80,
       }}
     >
-      <XAxis type="number" stroke="grey" />
+        
+      <XAxis type="number" opacity=".3" stroke="grey" />
       <YAxis
         dataKey="name"
-        stroke="grey"
+        opacity=".5"
+        stroke="#84ffffde"
         type="category"
         scale="band"
       />
@@ -93,7 +95,7 @@ export default function App() {
         animationDuration={duration}
         dataKey="Skill_Meter"
         fill="#004d40"
-        opacity=".12"
+        opacity=".2"
       />
       <Bar animationDuration={duration2} dataKey="Skill_Meter" barSize={2} />
     </ComposedChart>

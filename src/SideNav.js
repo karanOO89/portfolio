@@ -13,7 +13,9 @@ const SideNav = (props) => {
   };
   return (
     <div className="sideNav">
-      <div className="logo">Logo</div>
+      <div className="logo">
+        <img width = "150px"src="pic.jpeg"/>
+      </div>
       <label className="name">
         Karan <b>Gaba</b>
       </label>
@@ -35,6 +37,10 @@ const SideNav = (props) => {
       <button onClick={clickHandlerResume}>Resume</button>
 
         <button onClick={clickHandlerEmail}>Email Me</button>
+      </div>
+      <div className="copyright">
+        <label>Copyright © 2021 Karan</label>
+
       </div>
     </div>
   );

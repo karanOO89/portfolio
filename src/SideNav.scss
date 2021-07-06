@@ -21,51 +21,51 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #10130c;
+    img{
+    border-radius: 50%;
+    // border: 2px solid #10130c;
+
+    }
   }
   .name {
     border-radius: 25px;
+    font-size: small;
     color: #00bfa5;
-
+    font-family: "Montserrat Alternates", sans-serif;
     padding: 0.3em;
     margin-top: 1em;
   }
   .profile {
+    margin-top: 0.3em;
+
+    font-family: "Courgette", cursive;
     border-radius: 25px;
     color: rgb(42, 38, 38);
     padding: 0.4em;
-    background-image: linear-gradient(
-      to right,
-      #1de9b6,
-      #00bfa5
-    );
+    background-image: linear-gradient(to right, #1de9b6, #00bfa5);
   }
   .social {
     display: flex;
     min-width: 5em;
-justify-content: space-evenly;
+    justify-content: space-evenly;
     margin-top: 2em;
     img {
       width: 35px;
       border-radius: 50px;
-      background-image: linear-gradient(
-      to right,
-      #bcebe4b4,
-
-      #bcebe4c2,
-      
-    );
+      background-image: linear-gradient(to right, #bcebe4b4, #bcebe4c2);
     }
   }
   .loc {
-    margin-top: .5em;
+    margin-top: 0.5em;
     padding: 1em;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: small;
 
     img {
-      
       padding-right: 0.9em;
       width: 25px;
     }
@@ -84,15 +84,10 @@ justify-content: space-evenly;
       cursor: pointer;
       text-align: center;
       outline: none;
-      color:#07ffda;
-      background-image: linear-gradient(
-      to right,
-      #243d3a,
-      #0b5f4a,
-      
-    );
-    margin-bottom: 5px;
-      border:none;
+      color: #07ffda;
+      background-image: linear-gradient(to right, #243d3a, #0b5f4a);
+      margin-bottom: 5px;
+      border: none;
       border-radius: 1px;
     }
 
@@ -104,5 +99,15 @@ justify-content: space-evenly;
       background: #43928c;
       transform: translateY(2px);
     }
+  }
+  .copyright {
+    color: #43928c52;
+    display: flex;
+    margin-top: 4em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: xx-small;
   }
 }
